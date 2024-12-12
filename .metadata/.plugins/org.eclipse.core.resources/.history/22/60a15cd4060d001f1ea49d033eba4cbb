@@ -1,0 +1,2 @@
+spring.application.name=Api_Gatewy
+server.port=8081

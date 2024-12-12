@@ -1,0 +1,19 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8081
+spring:
+  application:
+    name: Api_Gateway
+    
+    
+  cloud:
+    gateway:
+      routes:
+        - id: userservice
+          uri: lb://userManagement # Replace with your user service URL
+          predicates:
+            - Path=/test # Matches requests starting with /api/users/
+         

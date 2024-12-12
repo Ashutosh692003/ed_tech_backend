@@ -1,0 +1,5 @@
+package com.ashutosh.service;
+
+public interface service {
+
+}

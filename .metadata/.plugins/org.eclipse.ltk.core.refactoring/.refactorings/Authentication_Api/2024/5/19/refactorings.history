@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;jwtService.java&apos; to &apos;Api_Gateway/src/main/java/com.ashutosh.util&apos;&#x0D;&#x0A;- Original project: &apos;Authentication_Api&apos;&#x0D;&#x0A;- Destination element: &apos;Api_Gateway/src/main/java/com.ashutosh.util&apos;&#x0D;&#x0A;- Original element: &apos;com.ashutosh.service.jwtService.java&apos;" description="Copy compilation unit" destination="=Api_Gateway/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ashutosh.util" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ashutosh.service{jwtService.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1715312727915" units="1" version="1.0"/>
+</session>

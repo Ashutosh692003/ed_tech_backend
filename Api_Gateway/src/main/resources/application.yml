@@ -1,0 +1,32 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8081
+spring:
+  application:
+    name: Api_Gateway
+    
+    
+  cloud:
+    gateway:
+      routes:
+        - id: userservice
+          uri: lb://userManagement # Replace with your user service URL
+          predicates:
+            - Path=/test # Matches requests starting with /api/users/
+          filters:
+            - AuthenticationFilter  
+        - id: auth-servode
+          uri: lb://AuthenticationApi # Replace with your user service URL
+          predicates:
+            - Path=/auth/** # Matches requests starting with /api/users/
+          filters:
+            - AuthenticationFilter   
+        - id: courseapi
+          uri: lb://CourseManagementAPI #Replace with your user service URL
+          predicates:
+            - Path=/courseApi2/** # Matches requests starting with /api/users/
+          filters:
+            - AuthenticationFilter   
